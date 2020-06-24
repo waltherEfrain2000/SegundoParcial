@@ -40,6 +40,18 @@ Partial Class arreglos
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtmarca = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtmodelo = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtprecio = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtcantidad = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtvender = New System.Windows.Forms.TextBox()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -48,25 +60,37 @@ Partial Class arreglos
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.Button9)
+        Me.GroupBox4.Controls.Add(Me.txtvender)
+        Me.GroupBox4.Controls.Add(Me.Label7)
+        Me.GroupBox4.Controls.Add(Me.txtcantidad)
+        Me.GroupBox4.Controls.Add(Me.Label6)
+        Me.GroupBox4.Controls.Add(Me.txtprecio)
+        Me.GroupBox4.Controls.Add(Me.Label5)
+        Me.GroupBox4.Controls.Add(Me.txtmodelo)
+        Me.GroupBox4.Controls.Add(Me.Label4)
+        Me.GroupBox4.Controls.Add(Me.txtmarca)
+        Me.GroupBox4.Controls.Add(Me.Label3)
         Me.GroupBox4.Controls.Add(Me.Button8)
-        Me.GroupBox4.Location = New System.Drawing.Point(392, 203)
+        Me.GroupBox4.Location = New System.Drawing.Point(392, 202)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(369, 261)
+        Me.GroupBox4.Size = New System.Drawing.Size(369, 322)
         Me.GroupBox4.TabIndex = 5
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "GroupBox4"
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(258, 35)
+        Me.Button8.Location = New System.Drawing.Point(258, 51)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 0
-        Me.Button8.Text = "Button8"
+        Me.Button8.Text = "Buscar"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.Button7)
         Me.GroupBox3.Controls.Add(Me.TextBox2)
         Me.GroupBox3.Location = New System.Drawing.Point(392, -5)
@@ -216,17 +240,116 @@ Partial Class arreglos
         Me.Button1.Text = "Generar computadoras"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(53, 58)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(100, 13)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Cant.Computadoras"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(23, 61)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(37, 13)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Marca"
+        '
+        'txtmarca
+        '
+        Me.txtmarca.Location = New System.Drawing.Point(87, 54)
+        Me.txtmarca.Name = "txtmarca"
+        Me.txtmarca.Size = New System.Drawing.Size(100, 20)
+        Me.txtmarca.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(23, 99)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(42, 13)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Modelo"
+        '
+        'txtmodelo
+        '
+        Me.txtmodelo.Location = New System.Drawing.Point(87, 99)
+        Me.txtmodelo.Name = "txtmodelo"
+        Me.txtmodelo.Size = New System.Drawing.Size(100, 20)
+        Me.txtmodelo.TabIndex = 5
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(23, 143)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(37, 13)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "Precio"
+        '
+        'txtprecio
+        '
+        Me.txtprecio.Location = New System.Drawing.Point(87, 140)
+        Me.txtprecio.Name = "txtprecio"
+        Me.txtprecio.Size = New System.Drawing.Size(100, 20)
+        Me.txtprecio.TabIndex = 7
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(23, 183)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(49, 13)
+        Me.Label6.TabIndex = 8
+        Me.Label6.Text = "Cantidad"
+        '
+        'txtcantidad
+        '
+        Me.txtcantidad.Location = New System.Drawing.Point(87, 183)
+        Me.txtcantidad.Name = "txtcantidad"
+        Me.txtcantidad.Size = New System.Drawing.Size(100, 20)
+        Me.txtcantidad.TabIndex = 9
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(104, 254)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(66, 13)
+        Me.Label7.TabIndex = 10
+        Me.Label7.Text = "Cant.Vender"
+        '
+        'txtvender
+        '
+        Me.txtvender.Location = New System.Drawing.Point(176, 251)
+        Me.txtvender.Name = "txtvender"
+        Me.txtvender.Size = New System.Drawing.Size(100, 20)
+        Me.txtvender.TabIndex = 11
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(143, 277)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(75, 23)
+        Me.Button9.TabIndex = 12
+        Me.Button9.Text = "Vender"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'arreglos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 559)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "arreglos"
         Me.Text = "arreglos"
         Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
@@ -254,4 +377,16 @@ Partial Class arreglos
     Friend WithEvents Button2 As Button
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents txtvender As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txtcantidad As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents txtprecio As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtmodelo As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txtmarca As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
 End Class

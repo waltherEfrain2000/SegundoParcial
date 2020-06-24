@@ -1,8 +1,8 @@
 ﻿Public Class arreglos
 
 
-    Private mcomputadoras(,3) As String
-        Private cantcomputadoras As Integer
+    Private mcomputadoras(,) As String
+    Private cantcomputadoras As Integer
         Private index As Byte
         Private encuentra As Boolean = False
 
@@ -66,20 +66,54 @@
 
             '3x3= comienza contar desde
             For i = 0 To (cantcomputadoras - 1) Step 1
-                mcomputadoras(i, 0) = InputBox("ingrese la marca N." & (i + 1), "Registro")
-                mcomputadoras(i, 1) = InputBox("ingrese la marca N." & (i + 1), "Registro")
-                mcomputadoras(i, 2) = InputBox("ingrese la marca N." & (i + 1), "Registro")
-                mcomputadoras(i, 3) = InputBox("ingrese la marca N." & (i + 1), "Registro")
+            mcomputadoras(i, 0) = InputBox("Ingrese la marca N." & (i + 1), "Registro")
+            mcomputadoras(i, 1) = InputBox("Ingrese el modelo N." & (i + 1), "Registro")
+            mcomputadoras(i, 2) = InputBox("Ingrese el precio N." & (i + 1), "Registro")
+            mcomputadoras(i, 3) = InputBox("Ingrese la cantidad N." & (i + 1), "Registro")
+            index = i
 
-            Next
-        End Sub
-
-        Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-            Dim marca As String
-            marca = txtmarca.text
-            For i = 0 To (cantcomputadoras - 1) Step 1
-                If (mcomputadoras(i, 0) = marca) Then
         Next
         End Sub
 
+        Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim marca As String
+        marca = txtMarca.Text.ToLower
+
+        For i = 0 To (cantcomputadoras - 1) Step 1
+            If (mcomputadoras(i, 0).ToLower = marca) Then
+                txtModelo.Text = mcomputadoras(i, 1)
+                txtPrecio.Text = mcomputadoras(i, 2)
+                txtCantidad.Text = mcomputadoras(i, 3)
+                encuentra = True
+                txtvender.Enabled = True
+                Button8.Enabled = True
+                Button9.Enabled = True
+            End If
+        Next
+        If (encuentra = False) Then
+            MessageBox.Show("No existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            txtMarca.Clear()
+        End If
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim cantVender, stock As Integer
+
+        cantVender = Val(txtvender.Text)
+        stock = mcomputadoras(index, 3)
+
+        If cantVender > stock Then
+            MessageBox.Show("El stock es insuficiente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+
+        ElseIf cantVender = stock Then
+            MessageBox.Show("Stock vacío", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            txtcantidad.Text = "0"
+
+        Else
+            mcomputadoras(index, 3) = stock - cantVender
+            MessageBox.Show("Venta Realizada", "Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            txtcantidad.Text = cantVender - stock
+
+        End If
+    End Sub
 End Class

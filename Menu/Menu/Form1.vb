@@ -51,21 +51,23 @@
         End Sub
 
         Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ocultarmenu()
+
+        mostrarforms(New arreglos)
+
+    End Sub
+
+        Private Sub Button3_Click(sender As Object, e As EventArgs) 
             ocultarmenu()
 
     End Sub
 
-        Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Private Sub Button4_Click(sender As Object, e As EventArgs) 
             ocultarmenu()
 
     End Sub
 
-        Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-            ocultarmenu()
-
-    End Sub
-
-        Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Private Sub Button5_Click(sender As Object, e As EventArgs) 
             ocultarmenu()
 
     End Sub
@@ -74,7 +76,7 @@
 
         End Sub
 
-        Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Private Sub Button6_Click(sender As Object, e As EventArgs) 
             ocultarmenu()
 
     End Sub
@@ -104,5 +106,15 @@
         mostrarmenu1(Panel2)
 
 
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        ocultarmenu()
+        mostrarforms(New frmlibretaAhorro)
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        ocultarmenu()
+        mostrarforms(New Entrega_Bolsa_Solidaria)
     End Sub
 End Class

@@ -79,6 +79,12 @@
     <Compile Include="arreglos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Entrega Bolsa Solidaria.Designer.vb">
+      <DependentUpon>Entrega Bolsa Solidaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entrega Bolsa Solidaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -111,6 +118,9 @@
   <ItemGroup>
     <EmbeddedResource Include="arreglos.resx">
       <DependentUpon>arreglos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrega Bolsa Solidaria.resx">
+      <DependentUpon>Entrega Bolsa Solidaria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
