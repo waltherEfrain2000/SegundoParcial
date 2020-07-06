@@ -79,17 +79,24 @@
     <Compile Include="arreglos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="conexion.vb" />
     <Compile Include="Entrega Bolsa Solidaria.Designer.vb">
       <DependentUpon>Entrega Bolsa Solidaria.vb</DependentUpon>
     </Compile>
     <Compile Include="Entrega Bolsa Solidaria.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="estudiantes.Designer.vb">
+      <DependentUpon>estudiantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="estudiantes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.vb">
+      <DependentUpon>menu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmlibretaAhorro.Designer.vb">
@@ -122,8 +129,11 @@
     <EmbeddedResource Include="Entrega Bolsa Solidaria.resx">
       <DependentUpon>Entrega Bolsa Solidaria.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="estudiantes.resx">
+      <DependentUpon>estudiantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmlibretaAhorro.resx">
       <DependentUpon>frmlibretaAhorro.vb</DependentUpon>
